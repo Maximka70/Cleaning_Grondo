@@ -8,7 +8,7 @@ html {
 
 .wrapper {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .container {
@@ -18,11 +18,22 @@ html {
   height: 100%;
   width: 100%;
   background-color: var(--primary-color);
-  color: var(--white-color)
+  color: var(--white-color);
 }
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.elipse {
+ 
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(75%);
+  transform: scale(1.05);
+  z-index: 0;
+  pointer-events: none;
 }
