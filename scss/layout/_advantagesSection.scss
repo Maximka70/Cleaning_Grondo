@@ -81,17 +81,18 @@
     }
 
 
-    &:hover .advantages__item-title{
+    &:hover .advantages__item-title {
       transition: all 0.3s ease;
       color: var(--yellow-color);
-       transform: translateY(-5px);
+      transform: translateY(-5px);
     }
 
-      &:hover .advantages__item-description{
-        transition: all 0.3s ease;
-        color: var(--white-color);
-        transform: translateY(-5px);
-      }
+    &:hover .advantages__item-description {
+      transition: all 0.3s ease;
+      color: var(--white-color);
+      transform: translateY(-5px);
+    }
+
 
 
   }
@@ -106,11 +107,11 @@
   &__item-description {
     font-size: 20px;
     line-height: 1.6;
-    color: #BFBFBF;
+    color: var(--text-color);
   }
 
 
- 
+
 
 
 }
