@@ -343,7 +343,7 @@ ul {
   font-size: 30px;
   line-height: 150%;
   font-weight: 500;
-  color: var(--secondary-color-yellow);
+  color: var(--white-color);
 }
 .price__module-description {
   margin: 20px 0;
@@ -365,6 +365,23 @@ ul {
   margin: 20px;
   background: var(--background-color);
   gap: 15px;
+  transition: all 0.3s;
+  position: relative;
+}
+.price__item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(var(--yellow-color-rgb), 0.06);
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.price__item:hover {
+  filter: drop-shadow(0 0 6px rgba(var(--yellow-color-rgb), 0.5));
+}
+.price__item:hover::before {
+  opacity: 1;
 }
 .price__item-name {
   font-size: 20px;
@@ -375,11 +392,60 @@ ul {
   font-size: 18px;
   font-weight: 550;
   color: #B6731A;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .price__item-description {
   font-size: 16px;
   color: var(--text-color);
+}
+
+.otherServices__container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.otherServices__module {
+  width: 90%;
+  height: 100%;
+  border: 3px solid rgba(var(--yellow-color-rgb), 0.45);
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.otherServices__title {
+  font-size: 30px;
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--white-color);
+}
+.otherServices__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.otherServices__item {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(var(--yellow-color-rgb), 0.1);
+  align-items: center;
+  transition: 0.3s;
+}
+.otherServices__item:not(:first-child):hover {
+  background: rgba(255, 214, 19, 0.05);
+}
+.otherServices__item-head {
+  font-weight: 600;
+  font-size: 20px;
+}
+.otherServices__item-description, .otherServices__item-name {
+  color: rgba(255, 255, 255, 0.7);
+}
+.otherServices__item-cost {
+  font-size: 18px;
+  font-weight: 550;
+  color: #B6731A;
 }/*# sourceMappingURL=main.css.map */
