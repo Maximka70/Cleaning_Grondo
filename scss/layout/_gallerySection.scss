@@ -29,6 +29,8 @@
     position: relative;
     overflow: hidden;
     border-radius: 15px;
+    border: 2px solid rgba(var(--yellow-color-rgb), 0.5);
+    // filter: drop-shadow(0 0 6px rgba(var(--yellow-color-rgb), 0.5));
 
     img {
       width: 100%;
@@ -51,10 +53,11 @@
 
     opacity: 0;
     transition: 0.3s;
+    pointer-events: none;
   }
 
   &__item:hover {
-    
+
     img {
       transform: scale(1.1);
     }
@@ -64,5 +67,39 @@
     }
   }
 
+  &__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
+    background: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+
+    z-index: 1000;
+  }
+
+  &__modal.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__modal-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
+  touch-action: none;
 }
