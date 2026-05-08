@@ -1,0 +1,126 @@
+.footer {
+  position: relative;
+  margin-top: 200px ;
+
+  border-top: 1px solid rgba(255, 214, 19, 0.08);
+
+  overflow: hidden;
+
+  &__background {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  &__logo {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--yellow-color);
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    max-width: 420px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.7);
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 22px;
+    color: var(--white-color);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  &__link,
+  &__contact,
+  &__social-link {
+    color: rgba(255,255,255,0.68);
+    font-size: 16px;
+    white-space: nowrap;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  &__link:hover,
+  &__social-link:hover {
+    color: var(--yellow-color);
+    transform: translateX(4px);
+  }
+
+  &__social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  &__bottom {
+    padding-top: 28px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  &__copyright,
+  &__developer {
+    font-size: 15px;
+    color: rgba(255,255,255,0.45);
+  }
+}
+
+// @media (max-width: 1100px) {
+//   .footer__top {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .footer {
+//     padding: 70px 0 25px;
+
+//     &__container {
+//       padding: 0 20px;
+//     }
+
+//     &__top {
+//       grid-template-columns: 1fr;
+//       gap: 40px;
+//     }
+
+//     &__bottom {
+//       flex-direction: column;
+//       align-items: flex-start;
+//     }
+
+//     &__logo {
+//       font-size: 28px;
+//     }
+//   }
+// }
