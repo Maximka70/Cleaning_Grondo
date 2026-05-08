@@ -386,48 +386,25 @@
               </li>
             </ul>
             <form class="contactUs__form" action="#" method="post">
-
-              <!-- Имя + Email -->
               <div class="contactUs__form-row contactUs__form-row--double">
-
                 <div class="contactUs__field">
                   <label class="contactUs__label" for="name">Имя</label>
-                  <input id="name" type="text" name="name" placeholder="Ваше имя" class="contactUs__input" required>
-                </div>
-
-                <div class="contactUs__field">
-                  <label class="contactUs__label" for="email">Email</label>
-                  <input id="email" type="email" name="email" placeholder="your@email.com" class="contactUs__input"
+                  <input id="name" type="text" name="user_name" placeholder="Ваше имя" class="contactUs__input"
                     required>
                 </div>
-
+                <div class="contactUs__field">
+                  <label class="contactUs__label" for="email">Email</label>
+                  <input id="email" type="email" name="user_email" placeholder="your@email.com"
+                    class="contactUs__input">
+                </div>
               </div>
-
-              <!-- Телефон -->
               <div class="contactUs__form-row">
                 <div class="contactUs__field">
                   <label class="contactUs__label" for="phone">Телефон</label>
-                  <input id="phone" type="tel" name="phone" placeholder="+375 __ __ __ __" class="contactUs__input"
+                  <input id="phone" type="tel" name="user_phone" placeholder="+375 __ __ __ __" class="contactUs__input"
                     required>
                 </div>
               </div>
-
-              <!-- Услуга -->
-              <div class="contactUs__form-row">
-                <div class="contactUs__field">
-                  <label class="contactUs__label" for="service">Услуга</label>
-                  <select id="service" name="service" class="contactUs__select" required>
-                    <option value="" disabled selected>Выберите услугу</option>
-                    <option value="full-cleaning">Полная химчистка салона</option>
-                    <option value="seat-cleaning">Химчистка сидений</option>
-                    <option value="ceiling-cleaning">Чистка потолка</option>
-                    <option value="trunk-cleaning">Чистка багажника</option>
-                    <option value="odor-removal">Удаление запахов</option>
-                  </select>
-                </div>
-              </div>
-
-              <!-- Сообщение -->
               <div class="contactUs__form-row">
                 <div class="contactUs__field">
                   <label class="contactUs__label" for="message">Сообщение</label>
@@ -437,11 +414,12 @@
                 </div>
               </div>
 
-              <!-- Кнопка -->
               <button type="submit" class="contactUs__button">
-                Отправить заявку
+                <span class="contactUs__button-text">Отправить заявку</span>
+                <span class="contactUs__button-loader"></span>
               </button>
 
+              <div class="contactUs__status"></div>
             </form>
           </div>
         </div>
@@ -470,7 +448,8 @@
 
 
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
-<!-- monserat semi bolt fix -->
 
 </html>
