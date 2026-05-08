@@ -3,18 +3,35 @@
 
 
   &__background {
-    right: -30px;
-    mask-image: linear-gradient(to left,
-        transparent,
-        black 10%,
-        black 20%,
-        transparent);
-
+    position: absolute;
+    right: 0px;
+    bottom: -75%;
+    width: 25%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.85;
+    filter:
+      blur(40px) drop-shadow(0 0 90px rgba(255, 214, 19, 0.08));
 
     svg {
+      width: 100%;
+      height: 100%;
       display: block;
-      width: 600px;
-      height: auto;
+      transform: scale(1.2);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle,
+          rgba(255, 214, 19, 0.07) 0%,
+          rgba(255, 214, 19, 0.025) 40%,
+          transparent 75%);
+      filter: blur(70px);
+      z-index: -1;
     }
   }
 

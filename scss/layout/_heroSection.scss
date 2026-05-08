@@ -2,13 +2,37 @@
   position: relative;
 
   &__background {
-    top: -90px;
-    left: -60px;
-    mask-image: linear-gradient(to right,
-        transparent,
-        black 10%,
-        black 20%,
-        transparent);
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 700px;
+    height: 700px;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.9;
+    filter:
+      blur(40px) drop-shadow(0 0 50px rgba(255, 214, 19, 0.08));
+
+    svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+      transform: scale(2);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle,
+          rgba(255, 214, 19, 0.08) 0%,
+          rgba(255, 214, 19, 0.03) 35%,
+          transparent 75%);
+      filter: blur(60px);
+      z-index: -1;
+    }
+
   }
 
 
@@ -94,8 +118,6 @@
       background: #FFD613;
       transition: 0.3s;
     }
-
-
 
 
   }

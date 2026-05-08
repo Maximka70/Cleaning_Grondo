@@ -31,13 +31,3 @@ ul {
   margin: 0;
 }
 
-.elipse {
- 
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  filter: brightness(75%);
-  transform: scale(1.05);
-  z-index: 0;
-  pointer-events: none;
-}
