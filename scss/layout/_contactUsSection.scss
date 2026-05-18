@@ -34,7 +34,7 @@
   &__information-item {
     display: flex;
     align-items: center;
-    width: 450px;
+    width: auto;
     margin-bottom: 40px;
     border: 1px solid rgba(var(--yellow-color-rgb), 0.25);
     border-radius: 16px;
@@ -101,7 +101,7 @@
   &__information-content {
     display: flex;
     flex-direction: column;
-    padding-left: 35px;
+    padding:0 35px;
   }
 
   &__information-title {
@@ -109,14 +109,15 @@
     font-weight: 600;
     color: var(--yellow-color);
     letter-spacing: 0.5px;
+    margin-bottom: 0;
   }
 
   &__information-text {
-    font-size: 17px;
-    line-height: 1.6;
+    font-size: 19px;
     color: rgba(255, 255, 255, 0.78);
     transition: color 0.3s ease;
   }
+
 
   &__information-item:hover &__information-text {
     color: rgba(255, 255, 255, 0.95);

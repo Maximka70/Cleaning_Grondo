@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  margin-top: 200px ;
+  margin-top: 200px;
   border-top: 1px solid rgba(255, 214, 19, 0.08);
   overflow: hidden;
 
@@ -13,7 +13,6 @@
   &__container {
     position: relative;
     z-index: 2;
-    max-width: 1400px;
     margin: 0 auto;
     padding: 0 40px;
   }
@@ -21,9 +20,9 @@
   &__top {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 30px 0 50px 0;
     gap: 60px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   }
 
   &__logo {
@@ -37,11 +36,11 @@
     max-width: 420px;
     font-size: 17px;
     line-height: 1.8;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
   }
 
   &__title {
-    font-size: 20px;
+    font-size: 23px;
     margin-bottom: 22px;
     color: var(--white-color);
   }
@@ -55,25 +54,83 @@
   &__link,
   &__contact,
   &__social-link {
-    color: rgba(255,255,255,0.68);
-    font-size: 16px;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 18px;
     white-space: nowrap;
     transition:
       color 0.3s ease,
       transform 0.3s ease;
   }
 
-  &__link:hover,
-  &__social-link:hover {
+  &__link:hover {
     color: var(--yellow-color);
     transform: translateX(4px);
   }
+
+
 
   &__social-links {
     display: flex;
     flex-direction: column;
     gap: 14px;
   }
+
+  &__social-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+  }
+
+  &__social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      border-color 0.3s ease,
+      color 0.3s ease;
+
+    &--instagram {
+      color: #E1306C;
+      border: 1px solid rgba(225, 48, 108, 0.25);
+      background: rgba(225, 48, 108, 0.05);
+
+      &:hover {
+        transform: translateX(4px);
+        box-shadow: 0 0 18px rgba(225, 48, 108, 0.18);
+      }
+    }
+
+    &--telegram {
+      color: #229ED9;
+      border: 1px solid rgba(34, 158, 217, 0.25);
+      background: rgba(34, 158, 217, 0.05);
+
+      &:hover {
+        transform: translateX(4px);
+        box-shadow: 0 0 18px rgba(34, 158, 217, 0.18);
+      }
+    }
+
+    &--whatsapp {
+      color: #25D366;
+      border: 1px solid rgba(37, 211, 102, 0.25);
+      background: rgba(37, 211, 102, 0.05);
+
+      &:hover {
+        transform: translateX(4px);
+        box-shadow: 0 0 18px rgba(37, 211, 102, 0.18);
+      }
+    }
+
+  }
+
+
 
   &__bottom {
     padding-top: 28px;
@@ -85,39 +142,8 @@
     gap: 15px;
   }
 
-  &__copyright,
-  &__developer {
+  &__copyright {
     font-size: 15px;
-    color: rgba(255,255,255,0.45);
+    color: rgba(255, 255, 255, 0.45);
   }
 }
-
-// @media (max-width: 1100px) {
-//   .footer__top {
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-// }
-
-// @media (max-width: 768px) {
-//   .footer {
-//     padding: 70px 0 25px;
-
-//     &__container {
-//       padding: 0 20px;
-//     }
-
-//     &__top {
-//       grid-template-columns: 1fr;
-//       gap: 40px;
-//     }
-
-//     &__bottom {
-//       flex-direction: column;
-//       align-items: flex-start;
-//     }
-
-//     &__logo {
-//       font-size: 28px;
-//     }
-//   }
-// }
