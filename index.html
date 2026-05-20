@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/scss/main.css">
-  <script type="module" src="js/main.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
+  <script type="module" src="./js/main.js"></script>
 
   <title>DetailingCar</title>
 </head>
@@ -18,7 +18,7 @@
       <div class="header">
         <div class="header__container ">
           <div class="header__logo">
-            <a href="#">DetailingCar Logo</a>
+            <a href="#">DetailingCar Grodno</a>
           </div>
           <nav class="header__menu">
             <ul class="header__list">
@@ -177,63 +177,163 @@
         <div class="otherServices__container">
           <div class="otherServices__module">
             <h2 class="otherServices__title">Прочие услуги</h2>
-            <ul class="otherServices__list">
-              <li class="otherServices__item">
-                <div class="otherServices__item-head">Название услуги</div>
-                <div class="otherServices__item-head">Описание услуги</div>
-                <div class="otherServices__item-head">Цена</div>
-              </li>
-              <li class="otherServices__item">
-                <div class="otherServices__item-name">Химчистка одного сиденья</div>
-                <div class="otherServices__item-description">Экстракционная очистка одного тканевого сиденья</div>
-                <div class="otherServices__item-cost">от 30 BYN</div>
-              </li>
-              <li class="otherServices__item">
-                <div class="otherServices__item-name">Химчистка заднего дивана</div>
-                <div class="otherServices__item-description">Очистка сиденья и спинки </div>
-                <div class="otherServices__item-cost">от 40 BYN</div>
-              </li>
-              <li class="otherServices__item">
-                <div class="otherServices__item-name">Химчистка всех сидений</div>
-                <div class="otherServices__item-description">Очистка всех сидений в автомобиле</div>
-                <div class="otherServices__item-cost">от 100 BYN</div>
-              </li>
-              <li class="otherServices__item">
-                <div class="otherServices__item-name">Чистка коврового покрытия</div>
-                <div class="otherServices__item-description">Очистка пола и пространства под сиденьями</div>
-                <div class="otherServices__item-cost">от 50 BYN</div>
-              </li>
-              <li class="otherServices__item">
-                <div class="otherServices__item-name">Чистка багажника </div>
-                <div class="otherServices__item-description">Очистка обивки багажного отделения</div>
-                <div class="otherServices__item-cost">от 30 BYN</div>
-              </li>
-              <li class="otherServices__item">
-                <div class="otherServices__item-name">Чистка дверных карт </div>
-                <div class="otherServices__item-description">Очистка текстильных дверных карт и элементов дверей</div>
-                <div class="otherServices__item-cost">от 40 BYN</div>
-              </li>
-              <li class="otherServices__item">
-                <div class="otherServices__item-name">Чистка потолка </div>
-                <div class="otherServices__item-description">Безопасная очистка потолка и потолочной обивки</div>
-                <div class="otherServices__item-cost">от 50 BYN</div>
-              </li>
-              <li class="otherServices__item">
-                <div class="otherServices__item-name">Удаление локальных пятен </div>
-                <div class="otherServices__item-description">Устранение сложных локальных загрязнений</div>
-                <div class="otherServices__item-cost">от 30 BYN</div>
-              </li>
-              <li class="otherServices__item">
-                <div class="otherServices__item-name">Удаление запаха </div>
-                <div class="otherServices__item-description">Ионизации салона </div>
-                <div class="otherServices__item-cost">от 80 BYN</div>
-              </li>
-              <li class="otherServices__item">
-                <div class="otherServices__item-name">Керамическое покрытие </div>
-                <div class="otherServices__item-description">Защита кузова, блеск и гидрофобный эффект</div>
-                <div class="otherServices__item-cost">от 300 BYN</div>
-              </li>
-            </ul>
+            <div class="otherServices__grid">
+              <!-- Карточка с несколькими ценами -->
+              <div class="otherServices__card">
+                <div class="otherServices__card-header">
+                  <div class="otherServices__card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 11a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4H5v-4z" />
+                      <path d="M3 15h18v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2z" />
+                      <path d="M5 9V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2" />
+                      <path d="M6 18v2M18 18v2" />
+                    </svg>
+                  </div>
+                  <h3 class="otherServices__card-name">Химчистка сидений</h3>
+                  <p class="otherServices__card-tagline">Пятна, запахи и бактерии — убираем всё</p>
+                </div>
+                <div class="otherServices__card-body">
+                  <ul class="otherServices__price-list">
+                    <li class="otherServices__price-item">
+                      <span class="otherServices__price-label">Одно сиденье</span>
+                      <span class="otherServices__price-value">от 30 BYN</span>
+                    </li>
+                    <li class="otherServices__price-item">
+                      <span class="otherServices__price-label">Все сиденья</span>
+                      <span class="otherServices__price-value">от 100 BYN</span>
+                    </li>
+                    <li class="otherServices__price-item">
+                      <span class="otherServices__price-label">Задний диван</span>
+                      <span class="otherServices__price-value">от 40 BYN</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Карточка с несколькими ценами -->
+              <div class="otherServices__card">
+                <div class="otherServices__card-header">
+                  <div class="otherServices__card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="4" y="4" width="16" height="16" rx="2" />
+                      <line x1="4" y1="15" x2="20" y2="15" />
+                    </svg>
+                  </div>
+                  <h3 class="otherServices__card-name">Чистка покрытий</h3>
+                  <p class="otherServices__card-tagline">Пол, багажник и потолок — без следов</p>
+                </div>
+                <div class="otherServices__card-body">
+                  <ul class="otherServices__price-list">
+                    <li class="otherServices__price-item">
+                      <span class="otherServices__price-label">Ковровое покрытие</span>
+                      <span class="otherServices__price-value">от 50 BYN</span>
+                    </li>
+                    <li class="otherServices__price-item">
+                      <span class="otherServices__price-label">Багажник</span>
+                      <span class="otherServices__price-value">от 30 BYN</span>
+                    </li>
+                    <li class="otherServices__price-item">
+                      <span class="otherServices__price-label">Потолок</span>
+                      <span class="otherServices__price-value">от 50 BYN</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Карточка с несколькими ценами -->
+              <div class="otherServices__card">
+                <div class="otherServices__card-header">
+                  <div class="otherServices__card-icon">
+                    <svg fill="#000000" viewBox="0 0 24 24" id="car-door-left-2" data-name="Line Color"
+                      xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <line id="secondary" x1="8" y1="15" x2="10" y2="15"
+                          style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                        </line>
+                        <path id="primary"
+                          d="M4,20V4A1,1,0,0,1,5,3h6.59a1,1,0,0,1,.7.29l7.42,7.42a1,1,0,0,1,.29.7V20a1,1,0,0,1-1,1H5A1,1,0,0,1,4,20Zm0-9H19.9"
+                          style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                        </path>
+                      </g>
+                    </svg>
+                  </div>
+                  <h3 class="otherServices__card-name">Детали и пятна</h3>
+                  <p class="otherServices__card-tagline">Двери, локальные загрязнения — точечно</p>
+                </div>
+                <div class="otherServices__card-body">
+                  <ul class="otherServices__price-list">
+                    <li class="otherServices__price-item">
+                      <span class="otherServices__price-label">Дверные карты</span>
+                      <span class="otherServices__price-value">от 40 BYN</span>
+                    </li>
+                    <li class="otherServices__price-item">
+                      <span class="otherServices__price-label">Локальные пятна</span>
+                      <span class="otherServices__price-value">от 30 BYN</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Карточка с одной ценой -->
+              <div class="otherServices__card otherServices__card--single">
+                <div class="otherServices__card-header">
+                  <div class="otherServices__card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M2 15H18.5C20.43 15 22 16.57 22 18.5C22 20.43 20.43 22 18.5 22C16.57 22 15 20.43 15 18.5V18"
+                          stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                        <path d="M2 12H18.5C20.42 12 22 10.43 22 8.5C22 6.58 20.42 5 18.5 5C16.58 5 15 6.57 15 8.5V9"
+                          stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                        <path
+                          d="M2 9H9.31C10.8 9 12 7.79 12 6.31C12 4.82 10.79 3.62 9.31 3.62C7.82 3.62 6.62 4.83 6.62 6.31V6.69"
+                          stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <h3 class="otherServices__card-name">Удаление запаха</h3>
+                  <p class="otherServices__card-tagline">Ионизация — свежий воздух без химии</p>
+                </div>
+                <div class="otherServices__card-body">
+                  <p class="otherServices__price-single">от 80 BYN</p>
+                </div>
+              </div>
+
+              <!-- Карточка с одной ценой -->
+              <div class="otherServices__card otherServices__card--single">
+                <div class="otherServices__card-header">
+                  <div class="otherServices__card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path d="M14 3L17 9L12 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M10 3L7 9L12 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M17 3H7L3 9L12 21L21 9L17 3Z" stroke="currentColor" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                        <path d="M3 9H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <h3 class="otherServices__card-name">Керамическое покрытие</h3>
+                  <p class="otherServices__card-tagline">Защита кузова и гидрофобный эффект</p>
+                </div>
+                <div class="otherServices__card-body">
+                  <p class="otherServices__price-single">от 300 BYN</p>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
 
@@ -501,3 +601,5 @@
 </body>
 
 </html>
+
+<!-- npx sass scss:css --watch --source-map -->
