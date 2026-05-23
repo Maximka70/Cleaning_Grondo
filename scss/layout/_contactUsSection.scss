@@ -112,7 +112,14 @@
     margin-bottom: 0;
   }
 
-  &__information-text {
+&__information-addresses {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+  &__information-address {
     font-size: 19px;
     color: rgba(255, 255, 255, 0.78);
     transition: color 0.3s ease;

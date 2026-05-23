@@ -13,9 +13,10 @@
 
 <body id="top">
   <div class="wrapper">
+    <div class="header__overlay"></div>
     <div class="container">
 
-      <div class="header">
+      <header class="header">
         <div class="header__container ">
           <div class="header__logo">
             <a href="#">DetailingCar Grodno</a>
@@ -27,8 +28,13 @@
               <li class="header__menu-item"><a href="#contacts">Контакты</a></li>
             </ul>
           </nav>
+          <button class="header__burger" aria-label="Меню">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
         </div>
-      </div>
+      </header>
 
       <section class="hero">
         <div class="hero__background ">
@@ -178,7 +184,6 @@
           <div class="otherServices__module">
             <h2 class="otherServices__title">Прочие услуги</h2>
             <div class="otherServices__grid">
-              <!-- Карточка с несколькими ценами -->
               <div class="otherServices__card">
                 <div class="otherServices__card-header">
                   <div class="otherServices__card-icon">
@@ -210,7 +215,6 @@
                   </ul>
                 </div>
               </div>
-              <!-- Карточка с несколькими ценами -->
               <div class="otherServices__card">
                 <div class="otherServices__card-header">
                   <div class="otherServices__card-icon">
@@ -241,7 +245,6 @@
                 </div>
               </div>
 
-              <!-- Карточка с несколькими ценами -->
               <div class="otherServices__card">
                 <div class="otherServices__card-header">
                   <div class="otherServices__card-icon">
@@ -277,7 +280,6 @@
                 </div>
               </div>
 
-              <!-- Карточка с одной ценой -->
               <div class="otherServices__card otherServices__card--single">
                 <div class="otherServices__card-header">
                   <div class="otherServices__card-icon">
@@ -307,7 +309,6 @@
                 </div>
               </div>
 
-              <!-- Карточка с одной ценой -->
               <div class="otherServices__card otherServices__card--single">
                 <div class="otherServices__card-header">
                   <div class="otherServices__card-icon">
@@ -405,7 +406,13 @@
                 </div>
                 <div class="contactUs__information-content">
                   <h3 class="contactUs__information-title">Адрес</h3>
-                  <p class="contactUs__information-text">Гродно, улица Пестрака, 5Гк1</p>
+                  <div class="contactUs__information-addresses">
+                    <a href="https://yandex.com/maps/-/CPwgN61o" rel="noopener noreferrer"
+                      class="contactUs__information-address">Гродно, улица Пестрака, 5Гк1</a>
+                    <a href="https://yandex.com/maps/-/CPwgJRmp" target="_blank"
+                      class="contactUs__information-address">Гродно, Индурское шоссе, 26</a>
+                  </div>
+
                 </div>
               </li>
               <li class="contactUs__information-item">
@@ -591,8 +598,6 @@
 
         </div>
       </footer>
-
-
 
     </div>
   </div>
