@@ -99,6 +99,12 @@ ul {
   margin: 0 auto;
   padding: 0 30px;
 }
+@media (max-width: 576px) {
+  .header__logo {
+    max-width: 160px;
+    z-index: 150;
+  }
+}
 .header__logo a {
   font-size: 34px;
   font-weight: 700;
@@ -113,6 +119,11 @@ ul {
 @media (max-width: 768px) {
   .header__logo a {
     font-size: 28px;
+  }
+}
+@media (max-width: 576px) {
+  .header__logo a {
+    font-size: 20px;
   }
 }
 .header__menu {

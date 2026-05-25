@@ -25,6 +25,13 @@
     padding: 0 30px;
   }
 
+  &__logo {
+    @media (max-width: 576px) {
+      max-width: 160px;
+      z-index: 150;
+    }
+  }
+
   &__logo a {
     font-size: 34px;
     font-weight: 700;
@@ -39,6 +46,10 @@
 
     @media (max-width: 768px) {
       font-size: 28px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 20px;
     }
   }
 
@@ -158,6 +169,7 @@
   &__socials {
     padding-top: 50px;
     display: none;
+
     @media (max-width: 768px) {
       display: block;
     }
