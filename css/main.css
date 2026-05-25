@@ -1467,7 +1467,7 @@ body.no-scroll {
 .contactUs__information-content {
   display: flex;
   flex-direction: column;
-  padding: 0 35px;
+  padding: 2px 35px;
 }
 @media (max-width: 576px) {
   .contactUs__information-content {
@@ -1484,6 +1484,19 @@ body.no-scroll {
 @media (max-width: 576px) {
   .contactUs__information-title {
     font-size: 16px;
+  }
+}
+.contactUs__phone-trigger {
+  font-size: 19px;
+  margin-top: 5px;
+  padding: 10px 0;
+  color: rgba(255, 255, 255, 0.78);
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+@media (max-width: 576px) {
+  .contactUs__phone-trigger {
+    font-size: 14px;
   }
 }
 .contactUs__information-addresses {
