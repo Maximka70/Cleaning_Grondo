@@ -197,6 +197,7 @@ ul {
   border-radius: 999px;
   transform: translateX(-50%);
   transition: width 0.4s ease;
+  transition: transform 0.4s ease, color 0.4s ease;
 }
 .header__menu-item a::before {
   content: "";
@@ -209,19 +210,20 @@ ul {
   filter: blur(8px);
   transform: translateX(-50%);
   transition: width 0.4s ease;
+  transition: transform 0.4s ease, color 0.4s ease;
 }
-.header__menu-item a:hover {
+.header__menu-item a:hover, .header__menu-item.is-touched {
   color: var(--yellow-color);
   transform: translateY(-2px);
   text-shadow: 0 0 10px rgba(255, 214, 19, 0.15);
 }
-.header__menu-item a:hover::after {
+.header__menu-item a:hover::after, .header__menu-item.is-touched a::after {
   width: 100%;
 }
-.header__menu-item a:hover::before {
+.header__menu-item a:hover::before, .header__menu-item.is-touched a::before {
   width: 70%;
 }
-.header__menu-item a:active {
+.header__menu-item a:active, .header__menu-item.is-touched a:active {
   transform: translateY(0);
 }
 .header__socials {
@@ -563,10 +565,11 @@ ul {
   width: 0;
   height: 1px;
   background: #FFD613;
-  transition: 0.3s;
+  transition: width 0.4s ease;
 }
 .hero__heading-location:hover .hero__location, .hero__heading-location.is-touched .hero__location {
   transform: translateX(5px);
+  transition: transform 0.3s ease, color 0.3s ease;
   color: #FFD613;
   filter: drop-shadow(0 0 6px rgba(255, 214, 19, 0.5));
 }
@@ -575,6 +578,7 @@ ul {
 }
 .hero__heading-approach:hover .hero__approach, .hero__heading-approach.is-touched .hero__approach {
   transform: translateX(5px);
+  transition: transform 0.3s ease, color 0.3s ease;
   color: #FFD613;
   filter: drop-shadow(0 0 6px rgba(255, 214, 19, 0.5));
 }
@@ -583,6 +587,7 @@ ul {
 }
 .hero__heading-chemistry:hover .hero__chemistry, .hero__heading-chemistry.is-touched .hero__chemistry {
   transform: translateX(5px);
+  transition: transform 0.3s ease, color 0.3s ease;
   color: #FFD613;
   filter: drop-shadow(0 0 6px rgba(255, 214, 19, 0.5));
 }
@@ -937,6 +942,7 @@ ul {
 @media (max-width: 576px) {
   .price__item-name {
     font-size: 16px;
+    align-self: flex-start;
   }
 }
 .price__item-cost {

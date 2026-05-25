@@ -132,6 +132,7 @@
       border-radius: 999px;
       transform: translateX(-50%);
       transition: width 0.4s ease;
+      transition: transform 0.4s ease, color 0.4s ease;
     }
 
     a::before {
@@ -145,25 +146,32 @@
       filter: blur(8px);
       transform: translateX(-50%);
       transition: width 0.4s ease;
+      transition: transform 0.4s ease, color 0.4s ease;
+
     }
 
-    a:hover {
+    a:hover,
+    &.is-touched {
       color: var(--yellow-color);
       transform: translateY(-2px);
       text-shadow: 0 0 10px rgba(255, 214, 19, 0.15);
     }
 
-    a:hover::after {
+    a:hover::after,
+    &.is-touched a::after {
       width: 100%;
     }
 
-    a:hover::before {
+    a:hover::before,
+    &.is-touched a::before {
       width: 70%;
     }
 
-    a:active {
+    a:active,
+    &.is-touched a:active {
       transform: translateY(0);
     }
+
   }
 
   &__socials {

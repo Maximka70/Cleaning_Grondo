@@ -6,6 +6,7 @@ export function touchHover() {
   const galleryItems = document.querySelectorAll('.gallery__item');
   const socialItemsFooter = document.querySelectorAll('.footer__social-link');
   const socialItemsHeader = document.querySelectorAll('.header__social-link');
+  const menuItemsHeader = document.querySelectorAll('.header__menu-item');
 
   const addTouch = (elements) => {
     elements.forEach(el => {
@@ -28,4 +29,5 @@ export function touchHover() {
   addTouch(galleryItems);
   addTouch(socialItemsFooter);
   addTouch(socialItemsHeader);
+  addTouch(menuItemsHeader);
 }
