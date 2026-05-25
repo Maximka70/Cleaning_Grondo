@@ -206,15 +206,14 @@
       width: 0;
       height: 1px;
       background: #FFD613;
-      transition: width 0.4s ease;
+      transition: width 0.3s ease;
     }
   }
 
   &__heading-location:hover,
   &__heading-location.is-touched {
     & .hero__location {
-      transform: translateX(5px);
-      transition: transform 0.3s ease, color 0.3s ease;
+      // transition: transform 0.3s ease, color 0.3s ease;
       color: #FFD613;
       filter: drop-shadow(0 0 6px rgba(255, 214, 19, 0.5));
     }
@@ -227,8 +226,7 @@
   &__heading-approach:hover,
   &__heading-approach.is-touched {
     & .hero__approach {
-      transform: translateX(5px);
-      transition: transform 0.3s ease, color 0.3s ease;
+      // transition: transform 0.3s ease, color 0.3s ease;
       color: #FFD613;
       filter: drop-shadow(0 0 6px rgba(255, 214, 19, 0.5));
     }
@@ -241,8 +239,7 @@
   &__heading-chemistry:hover,
   &__heading-chemistry.is-touched {
     & .hero__chemistry {
-      transform: translateX(5px);
-      transition: transform 0.3s ease, color 0.3s ease;
+      // transition: transform 0.3s ease, color 0.3s ease;
       color: #FFD613;
       filter: drop-shadow(0 0 6px rgba(255, 214, 19, 0.5));
     }

@@ -150,28 +150,25 @@
 
     }
 
-    a:hover,
-    &.is-touched {
+    a:hover {
       color: var(--yellow-color);
       transform: translateY(-2px);
       text-shadow: 0 0 10px rgba(255, 214, 19, 0.15);
     }
 
-    a:hover::after,
-    &.is-touched a::after {
+    a:hover::after {
       width: 100%;
     }
 
-    a:hover::before,
-    &.is-touched a::before {
+    a:hover::before {
       width: 70%;
     }
 
-    a:active,
-    &.is-touched a:active {
+    a:active {
       transform: translateY(0);
     }
 
+  
   }
 
   &__socials {
