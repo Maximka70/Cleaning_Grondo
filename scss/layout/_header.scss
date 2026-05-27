@@ -37,7 +37,6 @@
     font-weight: 700;
     color: var(--white-color);
     text-decoration: none;
-    transition: color 0.35s ease, text-shadow 0.35s ease;
 
     &.header__logo--active {
       color: var(--yellow-color);
@@ -153,7 +152,6 @@
     a:hover {
       color: var(--yellow-color);
       transform: translateY(-2px);
-      text-shadow: 0 0 10px rgba(255, 214, 19, 0.15);
     }
 
     a:hover::after {
