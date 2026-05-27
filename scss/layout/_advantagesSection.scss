@@ -168,8 +168,7 @@
       }
     }
 
-    &:hover,
-    &.is-touched {
+    &:hover{
       background: rgba(255, 214, 19, 0.05);
 
       .advantages__item-title {

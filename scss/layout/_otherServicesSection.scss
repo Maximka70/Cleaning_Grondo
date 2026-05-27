@@ -90,10 +90,6 @@
       border-color: rgba(var(--yellow-color-rgb), 0.35);
     }
 
-    &.is-touched {
-      border-color: rgba(var(--yellow-color-rgb), 0.35);
-    }
-
     &--single {
       .otherServices__card-body {
         display: flex;

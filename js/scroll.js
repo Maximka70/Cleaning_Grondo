@@ -1,21 +1,12 @@
-export function scrollToId(){
+export function scrollToId() {
   document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
+    link.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (!target) return;
 
-    const target = document.querySelector(this.getAttribute("href"));
-
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth"
-      });
-
-      history.replaceState(
-        null,
-        null,
-        window.location.pathname
-      );
-    }
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+      history.replaceState(null, null, window.location.pathname);
+    });
   });
-});
 }

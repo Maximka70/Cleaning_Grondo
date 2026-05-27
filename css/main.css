@@ -747,14 +747,14 @@ ul {
     display: none;
   }
 }
-.advantages__list-item:hover, .advantages__list-item.is-touched {
+.advantages__list-item:hover {
   background: rgba(255, 214, 19, 0.05);
 }
-.advantages__list-item:hover .advantages__item-title, .advantages__list-item.is-touched .advantages__item-title {
+.advantages__list-item:hover .advantages__item-title {
   color: var(--yellow-color);
   transform: translateY(-5px);
 }
-.advantages__list-item:hover .advantages__item-description, .advantages__list-item.is-touched .advantages__item-description {
+.advantages__list-item:hover .advantages__item-description {
   color: var(--white-color);
   transform: translateY(-5px);
 }
@@ -922,10 +922,7 @@ ul {
     padding: 16px 50px;
   }
 }
-.price__item:hover {
-  border-color: rgba(var(--yellow-color-rgb), 0.35);
-}
-.price__item.is-touched {
+.price__item:hover, .price__item.is-touched {
   border-color: rgba(var(--yellow-color-rgb), 0.35);
 }
 .price__item-name {
@@ -1058,9 +1055,6 @@ ul {
   transition: border-color 0.2s ease;
 }
 .otherServices__card:hover {
-  border-color: rgba(var(--yellow-color-rgb), 0.35);
-}
-.otherServices__card.is-touched {
   border-color: rgba(var(--yellow-color-rgb), 0.35);
 }
 .otherServices__card--single .otherServices__card-body {
@@ -1430,7 +1424,7 @@ body.no-scroll {
   transform: translateX(-100%);
   transition: transform 0.7s ease;
 }
-.contactUs__information-item:hover::before {
+.contactUs__information-item:hover::before, .contactUs__information-item.is-touched::before {
   transform: translateX(100%);
 }
 .contactUs__information-icon {
@@ -1459,7 +1453,7 @@ body.no-scroll {
     height: 28px;
   }
 }
-.contactUs__information-item:hover .contactUs__information-icon {
+.contactUs__information-item:hover .contactUs__information-icon, .contactUs__information-item.is-touched .contactUs__information-icon {
   transform: scale(1.08);
   box-shadow: 0 0 18px rgba(255, 214, 19, 0.25);
   color: #fff;
@@ -1518,7 +1512,7 @@ body.no-scroll {
     font-size: 14px;
   }
 }
-.contactUs__information-item:hover .contactUs__information-text {
+.contactUs__information-item:hover .contactUs__information-text, .contactUs__information-item:hover .contactUs__information-address, .contactUs__information-item:hover .contactUs__phone-trigger, .contactUs__information-item.is-touched .contactUs__information-text, .contactUs__information-item.is-touched .contactUs__information-address, .contactUs__information-item.is-touched .contactUs__phone-trigger {
   color: rgba(255, 255, 255, 0.95);
 }
 .contactUs__form {

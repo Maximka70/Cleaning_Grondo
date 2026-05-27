@@ -116,14 +116,15 @@
       position: absolute;
       inset: 0;
       background: linear-gradient(120deg,
-        transparent 20%,
-        rgba(255, 214, 19, 0.08) 50%,
-        transparent 80%);
+          transparent 20%,
+          rgba(255, 214, 19, 0.08) 50%,
+          transparent 80%);
       transform: translateX(-100%);
       transition: transform 0.7s ease;
     }
 
-    &:hover::before {
+    &:hover::before,
+    &.is-touched::before {
       transform: translateX(100%);
     }
   }
@@ -138,8 +139,8 @@
     flex-shrink: 0;
     border-radius: 18px;
     background: radial-gradient(circle,
-      rgba(255, 214, 19, 0.15),
-      rgba(255, 214, 19, 0.04));
+        rgba(255, 214, 19, 0.15),
+        rgba(255, 214, 19, 0.04));
     border: 1px solid rgba(var(--yellow-color-rgb), 0.25);
     color: var(--yellow-color);
     transition:
@@ -160,7 +161,8 @@
     }
   }
 
-  &__information-item:hover &__information-icon {
+  &__information-item:hover &__information-icon,
+  &__information-item.is-touched &__information-icon {
     transform: scale(1.08);
     box-shadow: 0 0 18px rgba(255, 214, 19, 0.25);
     color: #fff;
@@ -188,7 +190,7 @@
     }
   }
 
- 
+
   &__information-addresses,
   &__information-phones {
     display: flex;
@@ -223,7 +225,12 @@
     }
   }
 
-  &__information-item:hover &__information-text {
+  &__information-item:hover &__information-text,
+  &__information-item:hover &__information-address,
+  &__information-item:hover &__phone-trigger,
+  &__information-item.is-touched &__information-text,
+  &__information-item.is-touched &__information-address, 
+  &__information-item.is-touched &__phone-trigger {
     color: rgba(255, 255, 255, 0.95);
   }
 
@@ -305,8 +312,8 @@
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     background: linear-gradient(135deg,
-      rgba(255, 255, 255, 0.025),
-      rgba(255, 255, 255, 0.015));
+        rgba(255, 255, 255, 0.025),
+        rgba(255, 255, 255, 0.015));
     color: var(--white-color);
     font-size: 16px;
     outline: none;
@@ -332,8 +339,8 @@
       0 0 0 3px rgba(255, 214, 19, 0.08),
       0 0 12px rgba(255, 214, 19, 0.08);
     background: linear-gradient(135deg,
-      rgba(255, 255, 255, 0.035),
-      rgba(255, 255, 255, 0.02));
+        rgba(255, 255, 255, 0.035),
+        rgba(255, 255, 255, 0.02));
   }
 
   &__textarea {
@@ -423,6 +430,8 @@
   }
 
   @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+      transform: rotate(360deg);
+    }
   }
 }

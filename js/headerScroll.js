@@ -1,11 +1,14 @@
 export function headerScroll() {
   const header = document.querySelector('.header');
+  let ticking = false;
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-      header.classList.add('header--scrolled');
-    } else {
-      header.classList.remove('header--scrolled');
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        header.classList.toggle('header--scrolled', window.scrollY > 10);
+        ticking = false;
+      });
+      ticking = true;
     }
   });
 }

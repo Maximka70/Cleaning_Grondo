@@ -123,10 +123,7 @@
       padding: 16px 50px;
     }
 
-    &:hover {
-      border-color: rgba(var(--yellow-color-rgb), 0.35);
-    }
-
+    &:hover,
     &.is-touched {
       border-color: rgba(var(--yellow-color-rgb), 0.35);
     }
