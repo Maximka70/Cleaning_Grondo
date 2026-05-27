@@ -1486,38 +1486,26 @@ body.no-scroll {
     font-size: 16px;
   }
 }
-.contactUs__phone-trigger {
+.contactUs__information-addresses, .contactUs__information-phones {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+  gap: 8px;
+}
+@media (max-width: 576px) {
+  .contactUs__information-addresses, .contactUs__information-phones {
+    margin: 10px 0;
+    gap: 6px;
+  }
+}
+.contactUs__information-address, .contactUs__phone-trigger {
   font-size: 19px;
-  margin-top: 5px;
   padding: 10px 0;
   color: rgba(255, 255, 255, 0.78);
   transition: color 0.3s ease;
-  text-decoration: none;
 }
 @media (max-width: 576px) {
-  .contactUs__phone-trigger {
-    font-size: 14px;
-  }
-}
-.contactUs__information-addresses {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin: 16px 0;
-}
-@media (max-width: 576px) {
-  .contactUs__information-addresses {
-    gap: 10px;
-    margin: 10px 0;
-  }
-}
-.contactUs__information-address {
-  font-size: 19px;
-  color: rgba(255, 255, 255, 0.78);
-  transition: color 0.3s ease;
-}
-@media (max-width: 576px) {
-  .contactUs__information-address {
+  .contactUs__information-address, .contactUs__phone-trigger {
     font-size: 14px;
   }
 }

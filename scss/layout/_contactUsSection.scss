@@ -188,33 +188,24 @@
     }
   }
 
-  &__phone-trigger {
-    font-size: 19px;
-    margin-top: 5px;
-    padding: 10px 0;
-    color: rgba(255, 255, 255, 0.78);
-    transition: color 0.3s ease;
-    text-decoration: none;
-
-    @media (max-width: 576px) {
-      font-size: 14px;
-    }
-  }
-
-  &__information-addresses {
+ 
+  &__information-addresses,
+  &__information-phones {
     display: flex;
     flex-direction: column;
-    gap: 16px;
     margin: 16px 0;
+    gap: 8px;
 
     @media (max-width: 576px) {
-      gap: 10px;
       margin: 10px 0;
+      gap: 6px;
     }
   }
 
-  &__information-address {
+  &__information-address,
+  &__phone-trigger {
     font-size: 19px;
+    padding: 10px 0;
     color: rgba(255, 255, 255, 0.78);
     transition: color 0.3s ease;
 

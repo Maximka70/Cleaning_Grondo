@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="preload" as="image" href="/assets/images/Main image/mercedes.webp">
   <script type="module" src="./js/main.js"></script>
 
   <title>DetailingCar</title>
@@ -145,7 +146,7 @@
             </ul>
           </div>
           <div class="hero__images">
-            <img src="./assets/images/mercedes.jpg" alt="inside image" class="hero__images-item2">
+            <img src="./assets/images/Main image/mercedes.webp" alt="inside image" class="hero__images-item2" loading="lazy">
           </div>
         </div>
 
@@ -385,32 +386,32 @@
           <div class="gallery__title">Наши работы</div>
           <div class="gallery__grid">
             <div class="gallery__item">
-              <img src="./assets/images/GalleryImages/AudiLeft.JPG" alt="audi1">
+              <img src="./assets/images/GalleryImages/AudiLeft.webp" alt="audi1" loading="lazy">
               <div class="gallery__overlay">
               </div>
             </div>
             <div class="gallery__item">
-              <img src="./assets/images/GalleryImages/AudiRight.JPG" alt="audi2">
+              <img src="./assets/images/GalleryImages/AudiRight.webp" alt="audi2" loading="lazy">
               <div class="gallery__overlay">
               </div>
             </div>
             <div class="gallery__item">
-              <img src="./assets/images/GalleryImages/AudiRearSeat.JPG" alt="audi3">
+              <img src="./assets/images/GalleryImages/AudiRearSeat.webp" alt="audi3" loading="lazy">
               <div class="gallery__overlay">
               </div>
             </div>
             <div class="gallery__item">
-              <img src="./assets/images/GalleryImages/Volkswagen.JPG" alt="volkswagen1">
+              <img src="./assets/images/GalleryImages/Volkswagen.webp" alt="volkswagen1" loading="lazy">
               <div class="gallery__overlay">
               </div>
             </div>
             <div class="gallery__item">
-              <img src="./assets/images/GalleryImages/VolkswagenRight.jpg" alt="volkswagen2">
+              <img src="./assets/images/GalleryImages/VolkswagenRight.webp" alt="volkswagen2" loading="lazy">
               <div class="gallery__overlay">
               </div>
             </div>
             <div class="gallery__item">
-              <img src="./assets/images/GalleryImages/VolkswagenRearSeat.jpg" alt="volkswagen3">
+              <img src="./assets/images/GalleryImages/VolkswagenRearSeat.webp" alt="volkswagen3" loading="lazy">
               <div class="gallery__overlay">
               </div>
             </div>
@@ -469,8 +470,10 @@
                 </div>
                 <div class="contactUs__information-content">
                   <h3 class="contactUs__information-title">Телефон</h3>
-                  <a href="tel:+375293067776" class="contactUs__phone-trigger">+375 29 306-77-76</a>
-                  <a href="tel:+375333595094" class="contactUs__phone-trigger">+375 33 359-50-94</a>
+                  <div class="contactUs__information-phones">
+                    <a href="tel:+375333595094" class="contactUs__phone-trigger">+375 33 359-50-94</a>
+                    <a href="tel:+375293067776" class="contactUs__phone-trigger">+375 29 306-77-76</a>
+                  </div>
                 </div>
               </li>
               <li class="contactUs__information-item">
